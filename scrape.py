@@ -24,7 +24,8 @@ def main():
                 d = {}
                 cols = row.find_all("td")
                 d['grantee'] = cols[0].text.strip()
-                d['amount'] = cols[1].text.replace("$", "").replace(",", "").strip()
+                d['amount'] = (cols[1].text.replace("$", "")
+                                      .replace(",", "").strip())
                 d['year'] = year
 
                 # Some grantees don't yet have reports so if we can't find a
