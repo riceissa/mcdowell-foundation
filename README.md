@@ -10,4 +10,4 @@ Specific issue: https://github.com/vipulnaik/donations/issues/24
 
 ## License
 
-CC0.
+CC0 for code and readme. Data subject to own copyrights.
