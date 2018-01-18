@@ -31,11 +31,15 @@ def main():
                 # Some grantees don't yet have reports so if we can't find a
                 # link we just ignore them.
                 try:
-                    d['six_month_report'] = cols[2].find("a").get("href")
+                    d['six_month_report'] = ("http://www.mcdowellfoundation.org" +
+                                             cols[2].find("a").get("href")
+                                                    .strip())
                 except:
                     pass
                 try:
-                    d['year_end_report'] = cols[3].find("a").get("href")
+                    d['year_end_report'] = ("http://www.mcdowellfoundation.org" +
+                                            cols[3].find("a").get("href")
+                                                   .strip())
                 except:
                     pass
 
